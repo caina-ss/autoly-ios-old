@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M9O-Uv-TWS" customClass="TagCell" customModule="Autoly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdo-X4-v4M">
+                        <rect key="frame" x="8" y="8" width="197" height="36"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="ab2-V6-foI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJe-Wy-KHH">
+                        <rect key="frame" x="20" y="8" width="173" height="36"/>
+                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fdo-X4-v4M" secondAttribute="bottom" constant="8" id="670-wt-eJb"/>
+                <constraint firstItem="fdo-X4-v4M" firstAttribute="leading" secondItem="pJe-Wy-KHH" secondAttribute="leading" constant="-12" id="6rg-im-v8e"/>
+                <constraint firstItem="pJe-Wy-KHH" firstAttribute="leading" secondItem="M9O-Uv-TWS" secondAttribute="leading" constant="20" id="Azq-zU-UhC"/>
+                <constraint firstItem="fdo-X4-v4M" firstAttribute="trailing" secondItem="pJe-Wy-KHH" secondAttribute="trailing" constant="12" id="BLj-HG-TxL"/>
+                <constraint firstItem="pJe-Wy-KHH" firstAttribute="top" secondItem="fdo-X4-v4M" secondAttribute="top" id="Ift-Im-OwC"/>
+                <constraint firstAttribute="trailing" secondItem="pJe-Wy-KHH" secondAttribute="trailing" constant="20" id="MTu-rV-DYc"/>
+                <constraint firstItem="fdo-X4-v4M" firstAttribute="top" secondItem="M9O-Uv-TWS" secondAttribute="top" constant="8" id="VZ2-va-JZD"/>
+                <constraint firstItem="pJe-Wy-KHH" firstAttribute="bottom" secondItem="fdo-X4-v4M" secondAttribute="bottom" id="oCu-mX-5sK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QVe-gO-vP9"/>
+            <size key="customSize" width="213" height="55"/>
+            <connections>
+                <outlet property="nameLabel" destination="pJe-Wy-KHH" id="wFg-sv-3ZW"/>
+                <outlet property="shadowView" destination="fdo-X4-v4M" id="cDa-sc-TEY"/>
+            </connections>
+            <point key="canvasLocation" x="60.5" y="-34.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

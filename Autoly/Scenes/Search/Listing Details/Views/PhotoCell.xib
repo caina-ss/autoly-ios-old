@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fuv-PM-n7W" customClass="PhotoCell" customModule="Autoly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5f-Ex-mY2">
+                        <rect key="frame" x="20" y="20" width="178" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Porsche" translatesAutoresizingMaskIntoConstraints="NO" id="brF-aM-eAR">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="156"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="brF-aM-eAR" firstAttribute="leading" secondItem="A5f-Ex-mY2" secondAttribute="leading" id="Amc-hH-dXs"/>
+                            <constraint firstAttribute="trailing" secondItem="brF-aM-eAR" secondAttribute="trailing" id="Hq5-O9-SR6"/>
+                            <constraint firstItem="brF-aM-eAR" firstAttribute="top" secondItem="A5f-Ex-mY2" secondAttribute="top" id="IHK-ed-JNT"/>
+                            <constraint firstAttribute="bottom" secondItem="brF-aM-eAR" secondAttribute="bottom" id="cW5-8v-Emg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="A5f-Ex-mY2" secondAttribute="trailing" constant="20" id="RE9-hA-zqQ"/>
+                <constraint firstItem="A5f-Ex-mY2" firstAttribute="top" secondItem="fuv-PM-n7W" secondAttribute="top" constant="20" id="cey-a6-lQD"/>
+                <constraint firstItem="A5f-Ex-mY2" firstAttribute="leading" secondItem="fuv-PM-n7W" secondAttribute="leading" constant="20" id="nj5-uL-UZd"/>
+                <constraint firstAttribute="bottom" secondItem="A5f-Ex-mY2" secondAttribute="bottom" constant="20" id="zZL-BL-fnj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CB2-4q-a0b"/>
+            <size key="customSize" width="247" height="322"/>
+            <connections>
+                <outlet property="photoView" destination="brF-aM-eAR" id="gMG-oX-FOH"/>
+                <outlet property="shadowView" destination="A5f-Ex-mY2" id="Yd3-7h-Ar1"/>
+            </connections>
+            <point key="canvasLocation" x="-37" y="67"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Porsche" width="670" height="502"/>
+    </resources>
+</document>

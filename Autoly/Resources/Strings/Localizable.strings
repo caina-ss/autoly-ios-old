@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Autoly
+
+  Created by Cainã Souza on 2018-04-04.
+  Copyright © 2018 PapelWeb. All rights reserved.
+*/
+
+// COLORS
+
+"white" = "Branco";
+
+// TRANSMISSION
+
+"transmission_automatic" = "Automático";
+
+// FUEL
+
+"fuel_type_gasoline" = "Gasolina";

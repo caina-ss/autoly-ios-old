@@ -1,0 +1,53 @@
+PODS:
+  - Bolts/Tasks (1.9.0)
+  - Differentiator (3.0.2)
+  - IQKeyboardManagerSwift (5.0.7)
+  - Parse (1.16.0):
+    - Parse/Core (= 1.16.0)
+  - Parse/Core (1.16.0):
+    - Bolts/Tasks (~> 1.9)
+  - Pulsator (0.4.1)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift (~> 5.0.0)
+  - Parse
+  - Pulsator
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bolts
+    - Differentiator
+    - IQKeyboardManagerSwift
+    - Parse
+    - Pulsator
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  Parse: 5b36dc2c2f0a2fd82a257ae018bc3d68cf2c24e7
+  Pulsator: 89a18d0e0ee2f642bb83cb9dfb6b7eebc1dc6241
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: e38b017a1f4a41a9f9ce93638c416c78bc17551d
+
+COCOAPODS: 1.5.0

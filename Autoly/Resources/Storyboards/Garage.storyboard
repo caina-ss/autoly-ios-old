@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Garagem-->
+        <scene sceneID="drP-eS-UXa">
+            <objects>
+                <viewController storyboardIdentifier="ListingsController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bk5-IX-ztW" customClass="ListingsController" customModule="Autoly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yw9-6m-Jdd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sri-7X-PTW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teZ-Xe-sQn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-PV-Qzy" customClass="MaterialActivityIndicatorView" customModule="Autoly" customModuleProvider="target">
+                                        <rect key="frame" x="157.5" y="293.5" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="NmU-0Y-4I3"/>
+                                            <constraint firstAttribute="height" constant="60" id="nt2-7q-xFl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.094117647060000004" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LKJ-PV-Qzy" firstAttribute="centerX" secondItem="teZ-Xe-sQn" secondAttribute="centerX" id="9S2-LZ-uRN"/>
+                                    <constraint firstItem="LKJ-PV-Qzy" firstAttribute="centerY" secondItem="teZ-Xe-sQn" secondAttribute="centerY" id="x4R-J9-Teb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtM-Wf-Xv6">
+                                <rect key="frame" x="293" y="585" width="52" height="52"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7Ek-ty-es2"/>
+                                    <constraint firstAttribute="width" constant="52" id="IUW-Ws-1Fv"/>
+                                </constraints>
+                                <state key="normal" image="AddSmallWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="bottom" secondItem="teZ-Xe-sQn" secondAttribute="bottom" id="5jl-cs-uug"/>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="bottom" secondItem="vtM-Wf-Xv6" secondAttribute="bottom" constant="30" id="F7A-cU-jfg"/>
+                            <constraint firstItem="Sri-7X-PTW" firstAttribute="leading" secondItem="HcS-T8-KoS" secondAttribute="leading" id="KTh-qM-BKp"/>
+                            <constraint firstItem="teZ-Xe-sQn" firstAttribute="top" secondItem="HcS-T8-KoS" secondAttribute="top" id="O6T-UO-gCS"/>
+                            <constraint firstItem="Sri-7X-PTW" firstAttribute="top" secondItem="Yw9-6m-Jdd" secondAttribute="top" id="U5j-ZB-sl8"/>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="trailing" secondItem="vtM-Wf-Xv6" secondAttribute="trailing" constant="30" id="W8j-l3-CBa"/>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="trailing" secondItem="Sri-7X-PTW" secondAttribute="trailing" id="bis-gf-BDT"/>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="trailing" secondItem="teZ-Xe-sQn" secondAttribute="trailing" id="rGr-cP-j3h"/>
+                            <constraint firstItem="HcS-T8-KoS" firstAttribute="bottom" secondItem="Sri-7X-PTW" secondAttribute="bottom" id="s28-fS-G0h"/>
+                            <constraint firstItem="teZ-Xe-sQn" firstAttribute="leading" secondItem="HcS-T8-KoS" secondAttribute="leading" id="sxX-8t-UXm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HcS-T8-KoS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Garagem" id="EId-mK-GNF"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="LKJ-PV-Qzy" id="pV4-68-GCE"/>
+                        <outlet property="loadingView" destination="teZ-Xe-sQn" id="3fh-bh-1nd"/>
+                        <outlet property="newListingButton" destination="vtM-Wf-Xv6" id="twE-C9-4iI"/>
+                        <outlet property="tableView" destination="Sri-7X-PTW" id="Age-ef-Qxu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTc-dG-RPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="-164"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddSmallWhite" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tutorial Controller-->
+        <scene sceneID="IP6-qN-PmP">
+            <objects>
+                <viewController storyboardIdentifier="TutorialController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JOE-VI-utT" customClass="TutorialController" customModule="Autoly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTs-Oj-o7o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-IS-M8z" customClass="PWLoadingButton" customModule="Autoly" customModuleProvider="target">
+                                <rect key="frame" x="16" y="563" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VRU-wn-zhw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                <state key="normal" title="Cadastrar"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Cadastrar"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN7-2J-sh3">
+                                <rect key="frame" x="16" y="611" width="343" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U8m-4A-9uA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="14"/>
+                                <state key="normal" title="Já possuo uma conta">
+                                    <color key="titleColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Já possuo uma conta"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H7D-vh-eL2" firstAttribute="trailing" secondItem="WSd-IS-M8z" secondAttribute="trailing" constant="16" id="Cu5-ys-e7j"/>
+                            <constraint firstItem="H7D-vh-eL2" firstAttribute="bottom" secondItem="HN7-2J-sh3" secondAttribute="bottom" constant="12" id="JCK-KW-aFz"/>
+                            <constraint firstItem="H7D-vh-eL2" firstAttribute="trailing" secondItem="HN7-2J-sh3" secondAttribute="trailing" constant="16" id="TAJ-2y-Jz7"/>
+                            <constraint firstItem="HN7-2J-sh3" firstAttribute="leading" secondItem="H7D-vh-eL2" secondAttribute="leading" constant="16" id="UFu-Eg-4Z3"/>
+                            <constraint firstItem="WSd-IS-M8z" firstAttribute="leading" secondItem="H7D-vh-eL2" secondAttribute="leading" constant="16" id="UxC-Uh-Bdt"/>
+                            <constraint firstItem="HN7-2J-sh3" firstAttribute="top" secondItem="WSd-IS-M8z" secondAttribute="bottom" constant="4" id="eUO-yA-9FE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H7D-vh-eL2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vzz-H0-wf5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Wye-SD-oWP">
+                            <color key="tintColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="HN7-2J-sh3" id="lHH-MN-Zzz"/>
+                        <outlet property="signupButton" destination="WSd-IS-M8z" id="KzG-7v-Zlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vae-7N-mnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454" y="-183"/>
+        </scene>
+        <!--Acessar-->
+        <scene sceneID="GP5-Hx-bdg">
+            <objects>
+                <viewController storyboardIdentifier="LoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NEb-Ib-LZu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kk6-se-Xbg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLF-Iy-XMX">
+                                <rect key="frame" x="16" y="44" width="42" height="22"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Do1-ha-BJQ" customClass="PWLoadingButton" customModule="Autoly" customModuleProvider="target">
+                                <rect key="frame" x="16" y="216" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="McU-3e-6MR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                <state key="normal" title="Acessar"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Acessar"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QI-V7-pwX">
+                                <rect key="frame" x="16" y="74" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mj1-sZ-qd2"/>
+                                </constraints>
+                                <color key="textColor" white="0.27146484375000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-Am-zQ5">
+                                <rect key="frame" x="16" y="122" width="47.5" height="22"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBP-Bn-WLU">
+                                <rect key="frame" x="16" y="152" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k50-vK-JY8"/>
+                                </constraints>
+                                <color key="textColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Do1-ha-BJQ" firstAttribute="top" secondItem="nBP-Bn-WLU" secondAttribute="bottom" constant="24" id="4tZ-fR-L14"/>
+                            <constraint firstItem="nCD-cE-xrP" firstAttribute="trailing" secondItem="nBP-Bn-WLU" secondAttribute="trailing" constant="16" id="Lar-yr-CIq"/>
+                            <constraint firstItem="4QI-V7-pwX" firstAttribute="leading" secondItem="nCD-cE-xrP" secondAttribute="leading" constant="16" id="PKG-fE-9JE"/>
+                            <constraint firstItem="4QI-V7-pwX" firstAttribute="top" secondItem="cLF-Iy-XMX" secondAttribute="bottom" constant="8" id="QjV-Q6-qQc"/>
+                            <constraint firstItem="nBP-Bn-WLU" firstAttribute="top" secondItem="Fah-Am-zQ5" secondAttribute="bottom" constant="8" id="Wzg-xH-wgN"/>
+                            <constraint firstItem="Do1-ha-BJQ" firstAttribute="leading" secondItem="nCD-cE-xrP" secondAttribute="leading" constant="16" id="XvM-C9-JEC"/>
+                            <constraint firstItem="nCD-cE-xrP" firstAttribute="trailing" secondItem="4QI-V7-pwX" secondAttribute="trailing" constant="16" id="f3R-RP-KrF"/>
+                            <constraint firstItem="Fah-Am-zQ5" firstAttribute="leading" secondItem="nCD-cE-xrP" secondAttribute="leading" constant="16" id="h59-rh-Yqe"/>
+                            <constraint firstItem="cLF-Iy-XMX" firstAttribute="leading" secondItem="nCD-cE-xrP" secondAttribute="leading" constant="16" id="m5Z-FL-d7i"/>
+                            <constraint firstItem="nCD-cE-xrP" firstAttribute="trailing" secondItem="Do1-ha-BJQ" secondAttribute="trailing" constant="16" id="tSB-6U-pYK"/>
+                            <constraint firstItem="Fah-Am-zQ5" firstAttribute="top" secondItem="4QI-V7-pwX" secondAttribute="bottom" constant="8" id="v5J-QF-OSE"/>
+                            <constraint firstItem="cLF-Iy-XMX" firstAttribute="top" secondItem="nCD-cE-xrP" secondAttribute="top" constant="24" id="vQx-95-bRZ"/>
+                            <constraint firstItem="nBP-Bn-WLU" firstAttribute="leading" secondItem="nCD-cE-xrP" secondAttribute="leading" constant="16" id="vup-kz-Lcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nCD-cE-xrP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acessar" id="dbx-Qi-iaH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwI-e5-j1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="-183"/>
+        </scene>
+        <!--Acessar-->
+        <scene sceneID="c87-QF-Vwu">
+            <objects>
+                <viewController storyboardIdentifier="SignupController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hO9-3M-aH1" customClass="SignupController" customModule="Autoly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BhC-bU-y0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-NJ-GAe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM9-7k-saT">
+                                        <rect key="frame" x="16" y="44" width="343" height="22"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdI-Vr-dlZ" customClass="PWLoadingButton" customModule="Autoly" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="286" width="343" height="44"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.61568627450000002" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="dwm-Gz-Gjm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                                        <state key="normal" title="Criar conta"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Criar conta"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t39-42-D6E">
+                                        <rect key="frame" x="16" y="74" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Pt0-WJ-39k"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-jh-uYC">
+                                        <rect key="frame" x="16" y="122" width="47.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-YW-M6g">
+                                        <rect key="frame" x="16" y="152" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9Uf-Vi-TeD"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmação de senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2p-0e-Y0f">
+                                        <rect key="frame" x="16" y="200" width="172" height="22"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repita sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZG-pf-LUZ">
+                                        <rect key="frame" x="16" y="230" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vqN-Lf-fjf"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.27146484380000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EdI-Vr-dlZ" secondAttribute="trailing" constant="16" id="9bh-eh-E8H"/>
+                                    <constraint firstItem="l2p-0e-Y0f" firstAttribute="top" secondItem="2dA-YW-M6g" secondAttribute="bottom" constant="8" id="C3R-2B-dfu"/>
+                                    <constraint firstAttribute="trailing" secondItem="t39-42-D6E" secondAttribute="trailing" constant="16" id="PUd-Kj-3cj"/>
+                                    <constraint firstAttribute="bottom" secondItem="EdI-Vr-dlZ" secondAttribute="bottom" constant="24" id="RVn-hQ-FHM"/>
+                                    <constraint firstItem="1bu-jh-uYC" firstAttribute="top" secondItem="t39-42-D6E" secondAttribute="bottom" constant="8" id="S6t-sN-ko5"/>
+                                    <constraint firstItem="2dA-YW-M6g" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="UPI-26-AHo"/>
+                                    <constraint firstItem="aM9-7k-saT" firstAttribute="width" secondItem="6ES-NJ-GAe" secondAttribute="width" constant="-32" id="Unh-dh-ofH"/>
+                                    <constraint firstItem="EdI-Vr-dlZ" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="W4M-ke-rAB"/>
+                                    <constraint firstItem="aM9-7k-saT" firstAttribute="top" secondItem="6ES-NJ-GAe" secondAttribute="top" constant="44" id="YG5-8c-Vfr"/>
+                                    <constraint firstItem="LZG-pf-LUZ" firstAttribute="top" secondItem="l2p-0e-Y0f" secondAttribute="bottom" constant="8" id="e7i-cF-b7y"/>
+                                    <constraint firstItem="aM9-7k-saT" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="eIx-ZI-ehE"/>
+                                    <constraint firstAttribute="trailing" secondItem="aM9-7k-saT" secondAttribute="trailing" constant="16" id="eb6-tA-Sen"/>
+                                    <constraint firstItem="LZG-pf-LUZ" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="fa1-aB-wXI"/>
+                                    <constraint firstItem="l2p-0e-Y0f" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="id4-vs-op1"/>
+                                    <constraint firstItem="2dA-YW-M6g" firstAttribute="top" secondItem="1bu-jh-uYC" secondAttribute="bottom" constant="8" id="ifh-09-mKR"/>
+                                    <constraint firstAttribute="trailing" secondItem="2dA-YW-M6g" secondAttribute="trailing" constant="16" id="iik-ej-lnn"/>
+                                    <constraint firstItem="EdI-Vr-dlZ" firstAttribute="top" secondItem="LZG-pf-LUZ" secondAttribute="bottom" constant="16" id="kV8-6o-e0G"/>
+                                    <constraint firstItem="1bu-jh-uYC" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="pWl-O3-t7y"/>
+                                    <constraint firstItem="t39-42-D6E" firstAttribute="leading" secondItem="6ES-NJ-GAe" secondAttribute="leading" constant="16" id="sio-Sx-bCN"/>
+                                    <constraint firstAttribute="trailing" secondItem="LZG-pf-LUZ" secondAttribute="trailing" constant="16" id="tOU-go-Tvc"/>
+                                    <constraint firstItem="t39-42-D6E" firstAttribute="top" secondItem="aM9-7k-saT" secondAttribute="bottom" constant="8" id="zlZ-FD-Yuq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6ES-NJ-GAe" firstAttribute="leading" secondItem="Mk9-rH-i6n" secondAttribute="leading" id="4lb-3B-LmH"/>
+                            <constraint firstItem="Mk9-rH-i6n" firstAttribute="bottom" secondItem="6ES-NJ-GAe" secondAttribute="bottom" id="AnZ-qI-hpI"/>
+                            <constraint firstItem="6ES-NJ-GAe" firstAttribute="trailing" secondItem="Mk9-rH-i6n" secondAttribute="trailing" id="OO6-lV-kIo"/>
+                            <constraint firstItem="6ES-NJ-GAe" firstAttribute="top" secondItem="Mk9-rH-i6n" secondAttribute="top" id="fbU-X3-5Qs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mk9-rH-i6n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acessar" id="Qg4-Js-it3"/>
+                    <connections>
+                        <outlet property="emailField" destination="t39-42-D6E" id="Ggj-z6-bVW"/>
+                        <outlet property="passwordConfirmationField" destination="LZG-pf-LUZ" id="Rcp-9O-znd"/>
+                        <outlet property="passwordField" destination="2dA-YW-M6g" id="cKT-h3-tOD"/>
+                        <outlet property="signupButton" destination="EdI-Vr-dlZ" id="zDH-Fs-Oog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92b-Ct-Oxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.60000000000002" y="507.79610194902551"/>
+        </scene>
+    </scenes>
+</document>
